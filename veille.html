@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille Technologique : Du Code-Barres au QR Code (Sunrise 2027)</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2.2rem;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 8px;
+            margin-top: 35px;
+            font-size: 1.4rem;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Timeline */
+        .timeline {
+            border-left: 3px solid var(--secondary-color);
+            padding-left: 20px;
+            margin: 20px 0;
+        }
+
+        .timeline-item {
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .timeline-item h3 {
+            margin: 0 0 5px 0;
+            color: var(--primary-color);
+            font-size: 1.1rem;
+        }
+
+        .timeline-item span.date {
+            display: inline-block;
+            background: var(--secondary-color);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            margin-bottom: 5px;
+        }
+
+        .source-link {
+            font-size: 0.9rem;
+            font-style: italic;
+            color: #555;
+        }
+
+        /* Tableaux */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fdfdfd;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #95a5a6;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+        .btn-cv {
+        display: inline-block;
+        background-color: #3498db;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+        margin-top: 15px;
+        transition: background 0.3s;
+        }
+        .btn-cv:hover {
+        background-color: #2980b9;
+        }        
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="index.html" class="btn-cv">
+        📄 Retour au Portfolio
+    </a>    
+    <h1>Veille Technologique</h1>
+    <div class="subtitle">La transition mondiale du Code-Barres 1D vers le Code QR 2D (Standard GS1 / Sunrise 2027)</div>
+
+    <h2>1. En quoi consiste cette transition ?</h2>
+    <p>Pendant plus de 50 ans, le code-barres linéaire (1D) s'est contenté de stocker un identifiant numérique unique (le GTIN) lu par les caisses enregistreuses traditionnelles.</p>
+    <p>Le passage aux codes 2D (QR codes ou Data Matrix) dits <strong>« augmentés »</strong> s'appuie sur le standard <strong>GS1 Digital Link</strong>. Le code contient une <strong>adresse web (URL) structurée</strong> permettant une double lecture :</p>
+    <ul>
+        <li><strong>En caisse :</strong> Lecture instantanée du produit et de son prix par les scanners compatibles.</li>
+        <li><strong>Pour la logistique :</strong> Intégration de données dynamiques (numéros de lots, dates de péremption - DLC).</li>
+        <li><strong>Pour le consommateur :</strong> Accès direct (via smartphone) à la traçabilité, aux allergènes et aux informations de recyclage.</li>
+    </ul>
+
+    <h2>2. Frise chronologique et documents de référence (Des origines à 2026)</h2>
+    
+    <div class="timeline">
+        <div class="timeline-item">
+            <span class="date">Novembre 2021 (Documentation technique initiale)</span>
+            <h3>Publication des spécifications du GS1 Digital Link</h3>
+            <p>L'organisation mondiale pose les bases techniques de la syntaxe web pour lier l'identifiant produit (GTIN) à une URL structurée lisible en 2D.</p>
+            <div class="source-link">📄 Document officiel de référence : <a href="https://ref.gs1.org/docs/2021/HowAndWhy_GS1_Digital_Link" target="_blank">GS1 AISBL - The How and Why of GS1 Digital Link</a></div>
+        </div>
+
+        <div class="timeline-item">
+            <span class="date">Mars 2023 (Premières annonces industrielles)</span>
+            <h3>Lancement de l'écosystème de transition</h3>
+            <p>Les premiers rapports industriels (notamment par <em>Markem-Imaje</em>) officialisent le calendrier et préviennent les marques que les distributeurs se préparent activement à abandonner le monopole du 1D.</p>
+            <div class="source-link">📄 Article précurseur : <a href="https://www.markem-imaje.com/blog/post/are-you-aware-that-traditional-1d-barcodes-will-gradually-disappear-from-2027" target="_blank">Markem-Imaje Blog - Traditional 1D barcodes will gradually disappear</a></div>
+        </div>
+
+        <div class="timeline-item">
+            <span class="date">Juillet 2024 (Institutionnalisation)</span>
+            <h3>officialisation du cap 2027 par les instances</h3>
+            <p>Publication des portails d'information dédiés par les autorités sectorielles pour guider l'industrie de la grande distribution vers le <span class="highlight">Sunrise 2027</span>.</p>
+            <div class="source-link">📄 Page officielle de vulgarisation : <a href="https://digital-link.com/guides/gs1-digital-link-basics/" target="_blank">Digital-Link.com - GS1 digital link basics</a></div>
+        </div>
+
+        <div class="timeline-item">
+            <span class="date">Mai 2026 (État actuel & Réglementations)</span>
+            <h3>Urgence opérationnelle et couplage au Passeport Numérique</h3>
+            <p>Les analyses récentes (ex: <em>Unitag</em>) soulignent que la transition s'accélère à l'approche de l'échéance, poussée à la fois par GS1 et par les obligations européennes du Passeport Numérique des Produits (DPP).</p>
+            <div class="source-link">📄 Analyse récente : <a href="https://www.unitag.io/blog/gs1-digital-link-vs-qr-code-what-brands-and-printers-need-to-know-before-sunrise-2027" target="_blank">Unitag - GS1 Digital Link vs QR Code avant Sunrise 2027</a></div>
+        </div>
+    </div>
+
+    <h2>3. Avantages vs Défis de la migration</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Avantages Majeurs</th>
+                <th>Défis et Points de Vigilance</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <ul>
+                        <li><strong>Multifonctionnalité :</strong> Un seul code gère la caisse, la logistique et l'expérience client.</li>
+                        <li><strong>Transparence :</strong> Partage illimité d'informations réglementaires et écologiques.</li>
+                        <li><strong>Anti-gaspillage :</strong> Suivi précis des lots et des DLC en temps réel.</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><strong>Parc matériel :</strong> Nécessité de mettre à jour tous les scanners de caisse (passage du 1D au 2D).</li>
+                        <li><strong>Cybersécurité :</strong> Gestion rigoureuse des redirections d'URL pour contrer les risques de falsification.</li>
+                        <li><strong>Design emballage :</strong> Réorganisation graphique pour intégrer proprement le code 2D.</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer>
+        Veille technologique actualisée - Standards GS1 / Horizon Sunrise 2027
+    </footer>
+</div>
+
+</body>
+</html>
